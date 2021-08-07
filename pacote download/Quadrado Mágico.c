@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#define SIZE 3 //Para trocar o tamanho da MATRIZ é só alterar o valor de SIZE.
+#define SIZE 3 //Para trocar o tamanho da MATRIZ ï¿½ sï¿½ alterar o valor de SIZE.
 
 
 int main(void)
@@ -19,10 +19,10 @@ int main(void)
 
     setlocale(LC_ALL, "Portuguese");
 
-    printf("\nOlá, descubra abaixo se sua Matriz %ix%i é um Quadrado Mágico!\n\n", SIZE, SIZE);
-    printf("Insira os valores de cada elemento de acordo com sua posição na Matriz.\n\n");
+    printf("\nOlï¿½, descubra abaixo se sua Matriz %ix%i ï¿½ um Quadrado Mï¿½gico!\n\n", SIZE, SIZE);
+    printf("Insira os valores de cada elemento de acordo com sua posiï¿½ï¿½o na Matriz.\n\n");
 
-//Coleta dos valores para formação da Matriz.
+//Coleta dos valores para formaï¿½ï¿½o da Matriz.
     for (l=0; l<SIZE; l++)//linha
     {
         for (c=0; c<SIZE; c++)//coluna
@@ -32,8 +32,8 @@ int main(void)
         }
     }
 
-//Impressão da Matriz que foi digitada pelo usuário.
-    printf("\n\n\nEssa foi a Matriz que você digitou: \n\n");
+//Impressï¿½o da Matriz que foi digitada pelo usuï¿½rio.
+    printf("\n\n\nEssa foi a Matriz que vocï¿½ digitou: \n\n");
     for (l=0; l<SIZE; l++)
     {
         for (c=0; c<SIZE; c++)
@@ -50,12 +50,12 @@ int main(void)
     }
     printf("\nSoma da Diagonal Principal: %d\n", somaDiagonalP);
 
-//Diagonal Secundária
+//Diagonal Secundï¿½ria
     for (l=0;l<SIZE;l++)
     {
         somaDiagonalS = somaDiagonalS + matriz[l][SIZE-l-1];
     }
-    printf("\nSoma da Diagonal Secundária: %d\n\n", somaDiagonalS);
+    printf("\nSoma da Diagonal Secundï¿½ria: %d\n\n", somaDiagonalS);
 
 //Soma das LINHAS da Matriz.
     for (l=0; l<SIZE; l++)
@@ -63,25 +63,25 @@ int main(void)
         vetLinha[l] = 0;
         for (c=0; c<SIZE; c++)
             vetLinha [l] = vetLinha [l] + matriz[l][c];
-            printf("O valor da Soma da linha %d é: %d\n", l, vetLinha[l]);
+            printf("O valor da Soma da linha %d ï¿½: %d\n", l, vetLinha[l]);
         }
     printf("\n");
-//Soma das COLUNAS da Matriz.
 
+//Soma das COLUNAS da Matriz.
     for (c=0; c<SIZE; c++)
         {
         vetColuna[c] = 0;
         for (l=0; l<SIZE; l++)
             vetColuna [c]+= matriz[l][c];
-            printf("O valor da Soma da Coluna %d é: %d\n", c, vetColuna[c]);
+            printf("O valor da Soma da Coluna %d ï¿½: %d\n", c, vetColuna[c]);
         }
 
 
-//Verificar se todas as somas são iguais
+//Verificar se todas as somas sï¿½o iguais
 
 
 
-//Apresentação dos valores encontrados
+//Apresentaï¿½ï¿½o dos valores encontrados
 
 
 
